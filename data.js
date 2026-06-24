@@ -3,7 +3,7 @@
    ============================================================================
 
    After you change something here and click "Commit changes" on GitHub,
-   the live website updates by itself in about a minute. (Refresh the page.)
+   the live website updates by itself in a few minutes. (Refresh the page.)
 
    ----------------------------------------------------------------------------
    THE 3 THINGS YOU'LL DO MOST:
@@ -29,11 +29,11 @@ window.SALE = {
   /* ---- Sale-wide settings (change any time) ---------------------------- */
   whatsappNumber: "6581955662",          // Faith's WhatsApp number — digits only, no + or spaces
   contactName:    "Faith",
-  pickupLocation: "One Western Avenue (OWA), Apt 1101",
+  pickupLocation: "One Western Avenue (OWA), Apt 1101 — Harvard Business School",
   deadline:       "Sun 28 June",
   currency:       "$",
   headline:       "OWA Moving Sale",
-  subhead:        "We're moving out — everything available now through Sunday 28 June. Gently used, priced to clear. Pick-up only at OWA (Apt 1101).",
+  subhead:        "We're moving out — everything available now through Sunday 28 June. Gently used, priced to clear. Pick-up only at OWA, Apt 1101 (Harvard Business School).",
 
   /* ---- The items ------------------------------------------------------- */
   /* Tip: photos live in the images folder. Just use the file name, e.g. "IMG_3028.jpg".
@@ -48,10 +48,6 @@ window.SALE = {
       images:["pack2.jpg","pack1.jpg","pack3.jpg","pack4.jpg"] },
 
     /* ===== FURNITURE ===== */
-    { id:"sectional", title:"Sectional sofa with chaise", price:110, status:"available", category:"Furniture", featured:true,
-      note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
-      images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
-
     { id:"standing-desk", title:"Electric standing desk", price:100, status:"available", category:"Furniture", featured:true,
       note:"Heavy-duty white sit/stand desk — smooth, quiet motorised height adjust.",
       images:["IMG_3034.jpg","IMG_3042.jpg"] },
@@ -76,6 +72,10 @@ window.SALE = {
       note:"Wood top, soft fabric drawers — great for a bedroom.",
       images:["IMG_3044.jpg"] },
 
+    { id:"sectional", title:"Sectional sofa with chaise", price:60, status:"available", category:"Furniture", featured:true,
+      note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
+      images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
+
     { id:"bar-cart", title:"Bar cart with wine rack", price:48, status:"available", category:"Furniture", featured:true,
       note:"Industrial wood + metal, glass-stem holder & bottle storage.",
       images:["IMG_3032.jpg"] },
@@ -88,6 +88,10 @@ window.SALE = {
       note:"Classic white cube unit — books, bins or display.",
       images:["IMG_3047.jpg"] },
 
+    { id:"entryway-bundle", title:"Shoe rack + bin + clothing rack", price:40, status:"available", category:"Furniture",
+      note:"All three together (shown in the same photo): tall 10-tier shoe rack, stainless motion-sensor bin & the black metal clothing rail behind it.",
+      images:["IMG_3037.jpg","IMG_3046.jpg"] },
+
     { id:"garment-rack-wood", title:"Rolling garment rack with shelf", price:30, status:"available", category:"Furniture",
       note:"Wood + metal clothes rail on wheels, with storage shelf.",
       images:["IMG_3045.jpg"] },
@@ -96,13 +100,9 @@ window.SALE = {
       note:"Free-standing branch-style rack for coats & hats.",
       images:["IMG_3039.jpg"] },
 
-    { id:"garment-rack-metal", title:"Black metal garment rack", price:22, status:"available", category:"Furniture",
-      note:"Tall freestanding clothes rail.",
-      images:["IMG_3046.jpg"] },
-
-    { id:"air-mattress", title:"Air mattress (self-inflating)", price:10, status:"available", category:"Furniture",
-      note:"Self-inflatable electric air mattress — inflates on its own in minutes. Handy spare bed for guests.",
-      images:[] },
+    { id:"air-mattress", title:"Air mattress — queen, built-in pump", price:10, status:"available", category:"Furniture",
+      note:"Used once, basically new. Intex Dura-Beam Deluxe queen (22 inches high) with a built-in electric pump — inflates itself in minutes. Great spare bed.",
+      images:["airmattress.jpg"] },
 
     /* ===== LIGHTING ===== */
     { id:"arc-lamp", title:"Arc floor lamp", price:42, status:"available", category:"Lighting",
@@ -155,7 +155,7 @@ window.SALE = {
       images:["IMG_3038.jpg"] },
 
     { id:"space-heater", title:"Ceramic space heater (Dreo)", price:15, status:"available", category:"Appliances",
-      note:"Compact and quiet (the small one on the table).",
+      note:"Compact Dreo ceramic heater — the small one on the table, shown beside the tower fan.",
       images:["IMG_3031.jpg"] },
 
     { id:"kettle", title:"Electric gooseneck kettle", price:12, status:"available", category:"Appliances",
@@ -166,18 +166,22 @@ window.SALE = {
       note:"Cool-mist humidifier (sitting on top of the shelf in the photo).",
       images:["IMG_3047.jpg"] },
 
-    { id:"trash-can", title:"Stainless sensor bin", price:12, status:"available", category:"Appliances",
-      note:"Motion-sensor lid, no-touch.",
-      images:["IMG_3037.jpg"] },
-
     { id:"toaster", title:"2-slice toaster", price:8, status:"available", category:"Appliances",
       note:"Simple and works great.",
       images:["IMG_3022.jpg"] },
 
     /* ===== KITCHEN ===== */
+    { id:"cream-dinnerware", title:"Cream textured dinnerware set", price:45, status:"available", category:"Kitchen",
+      note:"Beautifully crafted ribbed stoneware — quality plates + bowls with a lovely textured finish.",
+      images:["IMG_3013.jpg"] },
+
     { id:"wine-glasses", title:"Wine glasses set", price:40, status:"available", category:"Kitchen",
       note:"Full set — red, white & coupe stemware.",
       images:["IMG_3017.jpg"] },
+
+    { id:"food-storage", title:"Glass food storage set", price:30, status:"available", category:"Kitchen",
+      note:"Lots of glass containers with lids — meal-prep ready.",
+      images:["IMG_3025.jpg"] },
 
     { id:"cookware", title:"Pots & pans bundle", price:30, status:"available", category:"Kitchen",
       note:"Stockpot, frying pans, lids, colander, sieves & thermal carafe.",
@@ -190,18 +194,6 @@ window.SALE = {
     { id:"dinner-set-green", title:"Sage-green dinnerware set", price:18, status:"available", category:"Kitchen",
       note:"Plates + bowls, lovely matte finish.",
       images:["IMG_3012.jpg"] },
-
-    { id:"dinner-set-cream", title:"Cream textured dinnerware set", price:18, status:"available", category:"Kitchen",
-      note:"Plates + bowls with a ribbed, modern look.",
-      images:["IMG_3013.jpg"] },
-
-    { id:"food-storage", title:"Glass food storage set", price:18, status:"available", category:"Kitchen",
-      note:"Lots of glass containers with lids — meal-prep ready.",
-      images:["IMG_3025.jpg"] },
-
-    { id:"bakeware", title:"Bakeware / casserole set", price:18, status:"available", category:"Kitchen",
-      note:"Ceramic & glass baking dishes in several sizes.",
-      images:["IMG_3016.jpg"] },
 
     { id:"knives", title:"Kitchen knife set", price:15, status:"available", category:"Kitchen",
       note:"Chef, bread & steak knives.",
@@ -222,6 +214,10 @@ window.SALE = {
     { id:"vases", title:"Glass hurricane vases (set of 3)", price:12, status:"available", category:"Kitchen",
       note:"Tall clear vases for flowers or candles.",
       images:["IMG_3015.jpg"] },
+
+    { id:"bakeware", title:"Bakeware / casserole dishes", price:5, status:"available", category:"Kitchen",
+      note:"$5–10 each depending on size — ceramic & glass baking dishes in several sizes.",
+      images:["IMG_3016.jpg"] },
 
     { id:"mugs", title:"Set of mugs", price:8, status:"available", category:"Kitchen",
       note:"Set of about 7 white/cream mugs.",
