@@ -39,7 +39,7 @@
       avail + (avail === 1 ? " item" : " items") + " still available";
 
     var name = S.contactName || "us";
-    var hi = "Hi " + name + "! I'm interested in the OWA furniture sale 🙂";
+    var hi = "Hi " + name + "! I'm interested in the OWA furniture sale";
     var link = "https://wa.me/" + (S.whatsappNumber || "") + "?text=" + encodeURIComponent(hi);
     var c = document.getElementById("contact");
     c.innerHTML = "Questions? <a href='" + link + "' target='_blank' rel='noopener'>Message " +
@@ -194,9 +194,9 @@
   function waLink(items, total) {
     var name = S.contactName || "there";
     var lines = items.map(function (i) { return "• " + i.title + " — " + money(i.price || 0); });
-    var msg = "Hi " + name + "! 👋 I'd like to buy these from the OWA sale:\n\n" +
+    var msg = "Hi " + name + "! I'd like to buy these from the OWA sale:\n\n" +
       lines.join("\n") + "\n\nTotal: " + money(total) +
-      "\nPick-up at " + (S.pickupLocation || "OWA") + ". When could I collect? 🙂";
+      "\nPick-up at " + (S.pickupLocation || "OWA") + ". When could I collect?";
     return "https://wa.me/" + (S.whatsappNumber || "") + "?text=" + encodeURIComponent(msg);
   }
 
