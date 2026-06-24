@@ -99,7 +99,7 @@
       ? '<div class="photocount">📷 ' + imgs.length + "</div>" : "";
     var imgInner = first
       ? '<img loading="lazy" src="' + esc(first) + '" alt="' + esc(it.title) + '">'
-      : '<div class="noimg"><span class="emoji">📷</span><span>No photo — ask Faith</span></div>';
+      : '<div class="noimg"><span class="emoji">🛏️</span><span>No photo yet</span></div>';
     return '<article class="card' + (sold ? " sold" : "") +
       (selected.has(it.id) ? " selected" : "") + '" data-id="' + esc(it.id) + '">' +
       '<div class="imgwrap" data-zoom="' + esc(it.id) + '">' +
