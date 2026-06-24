@@ -68,7 +68,7 @@ window.SALE = {
       note:"Folds down to save space. Wooden chairs with cushions included.",
       images:["IMG_3027.jpg"] },
 
-    { id:"dresser", title:"5-drawer fabric dresser", price:65, status:"available", category:"Furniture", featured:true,
+    { id:"dresser", title:"5-drawer fabric dresser", price:40, status:"available", category:"Furniture", featured:true,
       note:"Wood top, soft fabric drawers — great for a bedroom.",
       images:["IMG_3044.jpg"] },
 
@@ -126,6 +126,10 @@ window.SALE = {
       images:["IMG_3044.jpg"] },
 
     /* ===== APPLIANCES ===== */
+    { id:"monitor", title:"Desktop monitor", price:40, status:"available", category:"Appliances",
+      note:"Widescreen monitor (the one on the desk in the photo). Keyboard available too — just ask.",
+      images:["IMG_3034.jpg"] },
+
     { id:"blender", title:"High-power blender", price:30, status:"available", category:"Appliances",
       note:"Powerful jug blender — smoothies, soups, the works.",
       images:["IMG_3020.jpg"] },
