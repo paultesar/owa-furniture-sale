@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OWA Moving Sale — furniture & home, pick-up only</title>
+  <meta name="description" content="Moving-out furniture sale at One Western Avenue. Everything must go by 29 June. Pick a few items and message us on WhatsApp." />
+
+  <!-- Nice preview when the link is shared on WhatsApp / iMessage -->
+  <meta property="og:title" content="OWA Moving Sale 🛋️" />
+  <meta property="og:description" content="Furniture & home bits, priced to clear. Everything must go by 29 June — pick-up only at OWA." />
+  <meta property="og:image" content="https://paultesar.github.io/owa-furniture-sale/images/web/IMG_3028.jpg" />
+  <meta property="og:url" content="https://paultesar.github.io/owa-furniture-sale/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛋️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="hero">
+      <h1 id="headline">OWA Moving Sale</h1>
+      <p class="sub" id="subhead"></p>
+      <div class="tags">
+        <span class="tag brand"><span class="dot"></span><span id="livecount">items available</span></span>
+        <span class="tag">🗓️ Everything must go by <b>&nbsp;<span id="deadline"></span></b></span>
+        <span class="tag">📍 Pick-up only · <span id="pickup"></span></span>
+      </div>
+
+      <div class="how">
+        <div class="step"><span class="n">1</span><div><b>Browse &amp; tap</b><span>Tap any item to add it. Tap the photo to zoom in.</span></div></div>
+        <div class="step"><span class="n">2</span><div><b>Pick a few</b><span>Add as many as you like — they total up at the bottom.</span></div></div>
+        <div class="step"><span class="n">3</span><div><b>Send on WhatsApp</b><span>One tap sends your list to us to arrange pick-up.</span></div></div>
+      </div>
+
+      <p class="contact-line" id="contact"></p>
+    </header>
+
+    <nav class="filters" id="filters"></nav>
+
+    <main class="grid" id="grid"></main>
+
+    <div class="foot-note">
+      <p><b>Pick-up only</b> at <span id="pickup2"></span>. Cash or quick transfer on collection.<br>
+      Prices are friendly and flexible — if you're taking a few things, just ask. 💛</p>
+    </div>
+  </div>
+
+  <!-- Floating cart bar -->
+  <div class="cartbar" id="cartbar">
+    <div class="inner">
+      <div class="summary">
+        <div class="n" id="cart-n">0 items</div>
+        <div class="t" id="cart-t"></div>
+      </div>
+      <button class="clear" id="clear">Clear</button>
+      <a class="wa-btn" id="wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.04c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36l.56.01c.18.01.42-.07.66.5.24.59.82 2.01.89 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.69-.81.87-1.08.18-.28.36-.23.61-.14.25.09 1.6.76 1.87.89.27.14.45.21.52.32.07.12.07.66-.17 1.34z"/></svg>
+        <span class="wa-label-full">Send on WhatsApp</span>
+        <span class="wa-label-short">WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb">
+    <button class="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" aria-label="Previous">‹</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-next" aria-label="Next">›</button>
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // small bits of header text that mirror the data file
+    (function(){
+      try{
+        document.getElementById("pickup2").textContent = (window.SALE&&window.SALE.pickupLocation)||"OWA";
+      }catch(e){}
+    })();
+  </script>
+</body>
+</html>
