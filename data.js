@@ -127,7 +127,7 @@ window.SALE = {
 
     /* ===== APPLIANCES ===== */
     { id:"monitor", title:"Desktop monitor", price:40, status:"available", category:"Appliances",
-      note:"Widescreen monitor (the one on the desk in the photo). Keyboard available too — just ask.",
+      note:"Widescreen monitor (the one on the desk in the photo).",
       images:["IMG_3034.jpg"] },
 
     { id:"blender", title:"High-power blender", price:30, status:"available", category:"Appliances",
