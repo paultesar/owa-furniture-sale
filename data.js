@@ -30,10 +30,10 @@ window.SALE = {
   whatsappNumber: "6581955662",          // Faith's WhatsApp number — digits only, no + or spaces
   contactName:    "Faith",
   pickupLocation: "One Western Avenue (OWA), Apt 1101",
-  deadline:       "Sunday 29 June",
+  deadline:       "Sun 28 June",
   currency:       "$",
   headline:       "OWA Moving Sale",
-  subhead:        "We're moving out — everything must go by 29 June. Gently used, priced to clear. Pick-up only at OWA (Apt 1101).",
+  subhead:        "We're moving out — everything available now through Sunday 28 June. Gently used, priced to clear. Pick-up only at OWA (Apt 1101).",
 
   /* ---- The items ------------------------------------------------------- */
   /* Tip: photos live in the images folder. Just use the file name, e.g. "IMG_3028.jpg".
