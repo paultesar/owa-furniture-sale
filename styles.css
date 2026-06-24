@@ -55,12 +55,12 @@ a{color:inherit}
   padding:14px;margin:4px 0 20px;box-shadow:var(--shadow)
 }
 .how .step{display:flex;gap:10px;align-items:flex-start;font-size:13.5px}
-.how .n{
+.how .step .n{
   flex:none;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;
-  display:grid;place-items:center;font-weight:800;font-size:13px
+  display:grid;place-items:center;font-weight:800;font-size:14px
 }
-.how .step b{display:block}
-.how .step span{color:var(--muted)}
+.how .step b{display:block;color:var(--ink)}
+.how .step > div span{color:var(--muted)}
 @media(max-width:620px){
   .how{grid-template-columns:1fr;gap:12px;padding:14px 16px}
 }
@@ -104,6 +104,10 @@ a{color:inherit}
 .card .imgwrap{position:relative;aspect-ratio:4/3;background:#f0ece4;overflow:hidden}
 .card .imgwrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .card:hover .imgwrap img{transform:scale(1.04)}
+.card .noimg{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:4px;background:var(--brand-soft);color:var(--brand-dark);
+  font-weight:700;font-size:12.5px;text-align:center;padding:8px}
+.card .noimg .emoji{font-size:32px;line-height:1}
 .card .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
 .card .title{font-weight:800;font-size:15.5px;line-height:1.25}
 .card .note{font-size:12.5px;color:var(--muted);line-height:1.35}

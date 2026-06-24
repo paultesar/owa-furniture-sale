@@ -97,12 +97,15 @@
     var sold = it.status === "sold";
     var multi = imgs.length > 1
       ? '<div class="photocount">📷 ' + imgs.length + "</div>" : "";
+    var imgInner = first
+      ? '<img loading="lazy" src="' + esc(first) + '" alt="' + esc(it.title) + '">'
+      : '<div class="noimg"><span class="emoji">📷</span><span>No photo — ask Faith</span></div>';
     return '<article class="card' + (sold ? " sold" : "") +
       (selected.has(it.id) ? " selected" : "") + '" data-id="' + esc(it.id) + '">' +
       '<div class="imgwrap" data-zoom="' + esc(it.id) + '">' +
-        (first ? '<img loading="lazy" src="' + esc(first) + '" alt="' + esc(it.title) + '">' : "") +
+        imgInner +
         '<div class="check">✓</div>' +
-        '<div class="zoom">🔍</div>' + multi +
+        (first ? '<div class="zoom">🔍</div>' : "") + multi +
         (sold ? '<div class="sold-ribbon"><span>SOLD</span></div>' : "") +
       "</div>" +
       '<div class="body">' +
