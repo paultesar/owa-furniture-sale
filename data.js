@@ -8,17 +8,18 @@
    ----------------------------------------------------------------------------
    THE 3 THINGS YOU'LL DO MOST:
    ----------------------------------------------------------------------------
-   1. MARK SOMETHING SOLD .... change   status: "available"   to   status: "sold"
+   1. RESERVE / SELL an item . change   status: "available"   to   "reserved"  or  "sold"
    2. CHANGE A PRICE .......... edit the number after   price:   (no quotes)
    3. RENAME AN ITEM .......... edit the words inside the quotes after   title:
 
    OTHER HANDY EDITS:
+   • RESERVE an item (deposit) . change its status to   "reserved"  (amber RESERVED badge)
    • HIDE an item completely ... change its status to   "hidden"
    • SHOW it at the TOP ........ set   featured: true   (remove that to un-feature)
    • EDIT the little blurb ..... change the text in quotes after   note:
 
    RULES (so you don't break the page):
-   • status: must be exactly one of   "available"   "sold"   "hidden"
+   • status: must be one of   "available"   "reserved"   "sold"   "hidden"
    • Always keep the quotes "" around words, and the comma at the end of a line.
    • Only change the bits inside quotes, or the price numbers. Leave the rest.
    • If the page ever looks broken, use GitHub's "History" to undo your last edit.
@@ -100,7 +101,7 @@ window.SALE = {
       note:"Free-standing branch-style rack for coats & hats.",
       images:["IMG_3039.jpg"] },
 
-    { id:"air-mattress", title:"Air mattress — queen, built-in pump", price:10, status:"sold", category:"Furniture",
+    { id:"air-mattress", title:"Air mattress — queen, built-in pump", price:10, status:"reserved", category:"Furniture",
       note:"Used once, basically new. Intex Dura-Beam Deluxe queen (22 inches high) with a built-in electric pump — inflates itself in minutes. Great spare bed.",
       images:["airmattress.jpg"] },
 
@@ -126,11 +127,11 @@ window.SALE = {
       images:["IMG_3044.jpg"] },
 
     /* ===== APPLIANCES ===== */
-    { id:"monitor", title:"Desktop monitor", price:40, status:"sold", category:"Appliances",
+    { id:"monitor", title:"Desktop monitor", price:40, status:"reserved", category:"Appliances",
       note:"Widescreen monitor (the one on the desk in the photo).",
       images:["IMG_3034.jpg"] },
 
-    { id:"blender", title:"High-power blender", price:30, status:"sold", category:"Appliances",
+    { id:"blender", title:"High-power blender", price:30, status:"reserved", category:"Appliances",
       note:"Powerful jug blender — smoothies, soups, the works.",
       images:["IMG_3020.jpg"] },
 
@@ -146,7 +147,7 @@ window.SALE = {
       note:"Stainless wet/dry grinder — great for spices & batters.",
       images:["IMG_3022.jpg"] },
 
-    { id:"air-fryer", title:"Air fryer", price:20, status:"sold", category:"Appliances",
+    { id:"air-fryer", title:"Air fryer", price:20, status:"reserved", category:"Appliances",
       note:"Digital air fryer (right in the photo).",
       images:["IMG_3023.jpg"] },
 
@@ -170,7 +171,7 @@ window.SALE = {
       note:"Cool-mist humidifier (sitting on top of the shelf in the photo).",
       images:["IMG_3047.jpg"] },
 
-    { id:"toaster", title:"2-slice toaster", price:8, status:"sold", category:"Appliances",
+    { id:"toaster", title:"2-slice toaster", price:8, status:"reserved", category:"Appliances",
       note:"Simple and works great.",
       images:["IMG_3022.jpg"] },
 
@@ -183,11 +184,11 @@ window.SALE = {
       note:"Full set — red, white & coupe stemware.",
       images:["IMG_3017.jpg"] },
 
-    { id:"food-storage", title:"Glass food storage set", price:30, status:"sold", category:"Kitchen",
+    { id:"food-storage", title:"Glass food storage set", price:30, status:"reserved", category:"Kitchen",
       note:"Lots of glass containers with lids — meal-prep ready.",
       images:["IMG_3025.jpg"] },
 
-    { id:"cookware", title:"Pots & pans bundle", price:30, status:"sold", category:"Kitchen",
+    { id:"cookware", title:"Pots & pans bundle", price:30, status:"reserved", category:"Kitchen",
       note:"Stockpot, frying pans, lids, colander, sieves & thermal carafe.",
       images:["IMG_3019.jpg"] },
 
@@ -195,11 +196,11 @@ window.SALE = {
       note:"Everyday drinking glasses — a good batch.",
       images:["IMG_3018.jpg"] },
 
-    { id:"dinner-set-green", title:"Sage-green dinnerware set", price:18, status:"sold", category:"Kitchen",
+    { id:"dinner-set-green", title:"Sage-green dinnerware set", price:18, status:"reserved", category:"Kitchen",
       note:"Plates + bowls, lovely matte finish.",
       images:["IMG_3012.jpg"] },
 
-    { id:"knives", title:"Kitchen knife set", price:15, status:"sold", category:"Kitchen",
+    { id:"knives", title:"Kitchen knife set", price:15, status:"reserved", category:"Kitchen",
       note:"Chef, bread & steak knives.",
       images:["IMG_3026.jpg"] },
 
@@ -219,7 +220,7 @@ window.SALE = {
       note:"Tall clear vases for flowers or candles.",
       images:["IMG_3015.jpg"] },
 
-    { id:"bakeware", title:"Bakeware / casserole dishes", price:5, status:"sold", category:"Kitchen",
+    { id:"bakeware", title:"Bakeware / casserole dishes", price:5, status:"reserved", category:"Kitchen",
       note:"$5–10 each depending on size — ceramic & glass baking dishes in several sizes.",
       images:["IMG_3016.jpg"] },
 

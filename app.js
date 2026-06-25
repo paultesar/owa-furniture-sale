@@ -48,10 +48,11 @@
 
   // ---------- sorting ----------
   function catRank(c) { var i = CAT_ORDER.indexOf(c); return i === -1 ? 99 : i; }
+  function statusRank(s) { return s === "sold" ? 2 : s === "reserved" ? 1 : 0; }
   function sortItems(arr) {
     return arr.slice().sort(function (a, b) {
-      var sa = a.status === "sold" ? 1 : 0, sb = b.status === "sold" ? 1 : 0;
-      if (sa !== sb) return sa - sb;                       // available before sold
+      var sa = statusRank(a.status), sb = statusRank(b.status);
+      if (sa !== sb) return sa - sb;                       // available, then reserved, then sold
       var fa = a.featured ? 0 : 1, fb = b.featured ? 0 : 1;
       if (fa !== fb) return fa - fb;                       // featured first
       return (b.price || 0) - (a.price || 0);             // pricier first
@@ -95,25 +96,28 @@
     var imgs = it.images && it.images.length ? it.images : [];
     var first = imgs.length ? THUMB + imgs[0] : "";
     var sold = it.status === "sold";
+    var reserved = it.status === "reserved";
+    var taken = sold || reserved;
     var multi = imgs.length > 1
       ? '<div class="photocount">📷 ' + imgs.length + "</div>" : "";
     var imgInner = first
       ? '<img loading="lazy" src="' + esc(first) + '" alt="' + esc(it.title) + '">'
       : '<div class="noimg"><span class="emoji">🛏️</span><span>No photo yet</span></div>';
-    return '<article class="card' + (sold ? " sold" : "") +
+    return '<article class="card' + (sold ? " sold" : "") + (reserved ? " reserved" : "") +
       (selected.has(it.id) ? " selected" : "") + '" data-id="' + esc(it.id) + '">' +
       '<div class="imgwrap" data-zoom="' + esc(it.id) + '">' +
         imgInner +
         '<div class="check">✓</div>' +
         (first ? '<div class="zoom">🔍</div>' : "") + multi +
         (sold ? '<div class="sold-ribbon"><span>SOLD</span></div>' : "") +
+        (reserved ? '<div class="reserved-ribbon"><span>RESERVED</span></div>' : "") +
       "</div>" +
       '<div class="body">' +
         '<div class="title">' + esc(it.title) + "</div>" +
         (it.note ? '<div class="note">' + esc(it.note) + "</div>" : "") +
         '<div class="foot">' +
           '<span class="price">' + money(it.price || 0) + "</span>" +
-          (sold ? "" : '<button class="add" data-add="' + esc(it.id) + '">' +
+          (taken ? "" : '<button class="add" data-add="' + esc(it.id) + '">' +
             (selected.has(it.id) ? "✓ Added" : "+ Add") + "</button>") +
         "</div>" +
       "</div></article>";
@@ -156,7 +160,7 @@
     });
     grid.querySelectorAll(".card").forEach(function (card) {
       var id = card.getAttribute("data-id");
-      if (card.classList.contains("sold")) return;
+      if (card.classList.contains("sold") || card.classList.contains("reserved")) return;
       card.addEventListener("click", function () { toggle(id); });
     });
   }

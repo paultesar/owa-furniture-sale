@@ -152,6 +152,18 @@ a{color:inherit}
   box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:16px
 }
 
+/* ---------- Reserved (on hold) ---------- */
+.card.reserved{cursor:default}
+.card.reserved .imgwrap img{filter:grayscale(.35) brightness(.98);opacity:.72}
+.card.reserved:hover{transform:none;box-shadow:var(--shadow)}
+.card.reserved .add{display:none}
+.reserved-ribbon{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.reserved-ribbon span{
+  background:#e0922f;color:#fff;font-weight:900;letter-spacing:.06em;
+  padding:7px 16px;border-radius:8px;transform:rotate(-7deg);
+  box-shadow:0 4px 14px rgba(0,0,0,.22);font-size:15px
+}
+
 /* ---------- Floating cart bar ---------- */
 .cartbar{
   position:fixed;left:0;right:0;bottom:0;z-index:50;
