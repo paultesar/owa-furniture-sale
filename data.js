@@ -204,7 +204,7 @@ window.SALE = {
       note:"Chef, bread & steak knives.",
       images:["IMG_3026.jpg"] },
 
-    { id:"utensils", title:"Utensils, flatware & oven mitts", price:15, status:"available", category:"Kitchen",
+    { id:"utensils", title:"Utensils, flatware & oven mitts", price:15, status:"reserved", category:"Kitchen",
       note:"Cooking utensils, full cutlery set, can opener & mitts.",
       images:["IMG_3024.jpg"] },
 
@@ -224,7 +224,7 @@ window.SALE = {
       note:"Sold per piece — 2 small brown $5 each, mint & blue $10 each. (Glass dish with lid is reserved.)",
       images:["IMG_3016.jpg"] },
 
-    { id:"mugs", title:"Set of mugs", price:8, status:"available", category:"Kitchen",
+    { id:"mugs", title:"Set of mugs", price:8, status:"reserved", category:"Kitchen",
       note:"Set of about 7 white/cream mugs.",
       images:["IMG_3011.jpg"] },
 
