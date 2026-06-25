@@ -220,8 +220,8 @@ window.SALE = {
       note:"Tall clear vases for flowers or candles.",
       images:["IMG_3015.jpg"] },
 
-    { id:"bakeware", title:"Bakeware / casserole dishes", price:5, status:"reserved", category:"Kitchen",
-      note:"$5–10 each depending on size — ceramic & glass baking dishes in several sizes.",
+    { id:"bakeware", title:"Bakeware / casserole dishes", price:5, status:"available", category:"Kitchen",
+      note:"Sold per piece — 2 small brown $5 each, mint & blue $10 each. (Glass dish with lid is reserved.)",
       images:["IMG_3016.jpg"] },
 
     { id:"mugs", title:"Set of mugs", price:8, status:"available", category:"Kitchen",
