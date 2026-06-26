@@ -49,7 +49,7 @@ window.SALE = {
       images:["pack2.jpg","pack1.jpg","pack3.jpg","pack4.jpg"] },
 
     /* ===== FURNITURE ===== */
-    { id:"standing-desk", title:"Electric standing desk", price:100, status:"available", category:"Furniture", featured:true,
+    { id:"standing-desk", title:"Electric standing desk", price:100, status:"reserved", category:"Furniture", featured:true,
       note:"Heavy-duty white sit/stand desk — smooth, quiet motorised height adjust.",
       images:["IMG_3034.jpg","IMG_3042.jpg"] },
 
@@ -57,7 +57,7 @@ window.SALE = {
       note:"Set of 2. Dusty-blue velvet with gold frames — barely used.",
       images:["IMG_3030.jpg"] },
 
-    { id:"office-chair", title:"Ergonomic office chair", price:90, status:"available", category:"Furniture", featured:true,
+    { id:"office-chair", title:"Ergonomic office chair", price:90, status:"reserved", category:"Furniture", featured:true,
       note:"Grey high-back, fully adjustable. Very comfortable for long days.",
       images:["IMG_3034.jpg"] },
 
@@ -65,7 +65,7 @@ window.SALE = {
       note:"Black metal frame + mattress. Bedding can be included — just ask.",
       images:["pack4.jpg"] },
 
-    { id:"dining-table", title:"Drop-leaf dining table", price:65, status:"reserved", category:"Furniture", featured:true,
+    { id:"dining-table", title:"Drop-leaf dining table", price:65, status:"sold", category:"Furniture", featured:true,
       note:"Folds down to save space. (Table only — chairs sold separately below.)",
       images:["IMG_3027.jpg"] },
 
@@ -77,7 +77,7 @@ window.SALE = {
       note:"Wood top, soft fabric drawers — great for a bedroom.",
       images:["IMG_3044.jpg"] },
 
-    { id:"sectional", title:"Sectional sofa with chaise", price:60, status:"reserved", category:"Furniture", featured:true,
+    { id:"sectional", title:"Sectional sofa with chaise", price:60, status:"sold", category:"Furniture", featured:true,
       note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
       images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
 
@@ -110,7 +110,7 @@ window.SALE = {
       images:["airmattress.jpg"] },
 
     /* ===== LIGHTING ===== */
-    { id:"arc-lamp", title:"Arc floor lamp", price:42, status:"reserved", category:"Lighting",
+    { id:"arc-lamp", title:"Arc floor lamp", price:42, status:"sold", category:"Lighting",
       note:"Brushed-steel arc with white drum shade — great over a sofa.",
       images:["IMG_3041.jpg"] },
 
