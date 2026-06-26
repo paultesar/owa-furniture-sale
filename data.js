@@ -65,7 +65,7 @@ window.SALE = {
       note:"Black metal frame + mattress. Bedding can be included — just ask.",
       images:["pack4.jpg"] },
 
-    { id:"dining-table", title:"Drop-leaf dining table + 2 chairs", price:65, status:"available", category:"Furniture", featured:true,
+    { id:"dining-table", title:"Drop-leaf dining table + 2 chairs", price:65, status:"reserved", category:"Furniture", featured:true,
       note:"Folds down to save space. Wooden chairs with cushions included.",
       images:["IMG_3027.jpg"] },
 
@@ -73,7 +73,7 @@ window.SALE = {
       note:"Wood top, soft fabric drawers — great for a bedroom.",
       images:["IMG_3044.jpg"] },
 
-    { id:"sectional", title:"Sectional sofa with chaise", price:60, status:"available", category:"Furniture", featured:true,
+    { id:"sectional", title:"Sectional sofa with chaise", price:60, status:"reserved", category:"Furniture", featured:true,
       note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
       images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
 
@@ -106,7 +106,7 @@ window.SALE = {
       images:["airmattress.jpg"] },
 
     /* ===== LIGHTING ===== */
-    { id:"arc-lamp", title:"Arc floor lamp", price:42, status:"available", category:"Lighting",
+    { id:"arc-lamp", title:"Arc floor lamp", price:42, status:"reserved", category:"Lighting",
       note:"Brushed-steel arc with white drum shade — great over a sofa.",
       images:["IMG_3041.jpg"] },
 
@@ -114,7 +114,7 @@ window.SALE = {
       note:"Set of 2. Soft, cosy lighting.",
       images:["IMG_3040.jpg"] },
 
-    { id:"white-floor-lamp", title:"White floor lamp", price:32, status:"available", category:"Lighting",
+    { id:"white-floor-lamp", title:"White floor lamp", price:32, status:"reserved", category:"Lighting",
       note:"Modern pole lamp with linen drum shade.",
       images:["IMG_3043.jpg"] },
 
@@ -135,11 +135,11 @@ window.SALE = {
       note:"Powerful jug blender — smoothies, soups, the works.",
       images:["IMG_3020.jpg"] },
 
-    { id:"microwave", title:"Countertop microwave", price:25, status:"available", category:"Appliances",
+    { id:"microwave", title:"Countertop microwave", price:25, status:"reserved", category:"Appliances",
       note:"Stainless/black, large capacity (the one on the right in the photo).",
       images:["IMG_3022.jpg"] },
 
-    { id:"instant-pot", title:"Instant Pot pressure cooker", price:25, status:"available", category:"Appliances",
+    { id:"instant-pot", title:"Instant Pot pressure cooker", price:25, status:"reserved", category:"Appliances",
       note:"Multi-cooker (left in the photo).",
       images:["IMG_3023.jpg"] },
 
@@ -229,7 +229,7 @@ window.SALE = {
       images:["IMG_3011.jpg"] },
 
     /* ===== PLANTS ===== */
-    { id:"plants", title:"House plants — the whole lot", price:120, status:"available", category:"Plants",
+    { id:"plants", title:"House plants — the whole lot", price:120, status:"reserved", category:"Plants",
       note:"All the plants together: lots of real & faux, including big statement trees. Price is for the full collection.",
       images:["IMG_3036.jpg"] },
 
