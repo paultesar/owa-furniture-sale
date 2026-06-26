@@ -65,8 +65,12 @@ window.SALE = {
       note:"Black metal frame + mattress. Bedding can be included — just ask.",
       images:["pack4.jpg"] },
 
-    { id:"dining-table", title:"Drop-leaf dining table + 2 chairs", price:65, status:"reserved", category:"Furniture", featured:true,
-      note:"Folds down to save space. Wooden chairs with cushions included.",
+    { id:"dining-table", title:"Drop-leaf dining table", price:65, status:"reserved", category:"Furniture", featured:true,
+      note:"Folds down to save space. (Table only — chairs sold separately below.)",
+      images:["IMG_3027.jpg"] },
+
+    { id:"dining-chairs", title:"2 wooden dining chairs", price:15, status:"available", category:"Furniture",
+      note:"Set of 2, solid wood with cushions. (From the dining set.)",
       images:["IMG_3027.jpg"] },
 
     { id:"dresser", title:"5-drawer fabric dresser", price:40, status:"available", category:"Furniture", featured:true,
@@ -110,7 +114,7 @@ window.SALE = {
       note:"Brushed-steel arc with white drum shade — great over a sofa.",
       images:["IMG_3041.jpg"] },
 
-    { id:"column-lamps", title:"Pair of tall paper column lamps", price:34, status:"available", category:"Lighting",
+    { id:"column-lamps", title:"Pair of tall paper column lamps", price:34, status:"sold", category:"Lighting",
       note:"Set of 2. Soft, cosy lighting.",
       images:["IMG_3040.jpg"] },
 
