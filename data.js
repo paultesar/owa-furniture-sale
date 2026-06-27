@@ -101,6 +101,10 @@ window.SALE = {
       note:"Wood + metal clothes rail on wheels, with storage shelf.",
       images:["IMG_3045.jpg"] },
 
+    { id:"clothes-rack-metal", title:"Black metal clothes rack", price:10, status:"available", category:"Furniture",
+      note:"Tall freestanding black metal clothes rail.",
+      images:["IMG_3046.jpg"] },
+
     { id:"coat-rack", title:"Wooden coat stand", price:12, status:"available", category:"Furniture",
       note:"Free-standing branch-style rack for coats & hats.",
       images:["IMG_3039.jpg"] },

@@ -91,6 +91,9 @@ a{color:inherit}
   grid-column:1/-1;font-size:13px;font-weight:800;letter-spacing:.06em;
   text-transform:uppercase;color:var(--muted);margin:10px 2px 0
 }
+.section-label.section-taken{
+  border-top:1px solid var(--line);padding-top:18px;margin-top:24px;color:#b3aa9e
+}
 
 /* ---------- Card ---------- */
 .card{

@@ -135,14 +135,36 @@
     }
     var html = "";
     if (activeFilter === "All") {
+      var avail = items.filter(function (i) { return i.status === "available"; });
+      var resv  = items.filter(function (i) { return i.status === "reserved"; });
+      var soldI = items.filter(function (i) { return i.status === "sold"; });
+
+      // Available first, grouped by category — this is what buyers can actually buy
       var cats = CAT_ORDER.slice();
-      items.forEach(function (i) { if (cats.indexOf(i.category) === -1) cats.push(i.category); });
+      avail.forEach(function (i) { if (cats.indexOf(i.category) === -1) cats.push(i.category); });
       cats.forEach(function (c) {
-        var inCat = sortItems(items.filter(function (i) { return i.category === c; }));
+        var inCat = avail.filter(function (i) { return i.category === c; }).sort(function (a, b) {
+          var f = (a.featured ? 0 : 1) - (b.featured ? 0 : 1);
+          return f || ((b.price || 0) - (a.price || 0));
+        });
         if (!inCat.length) return;
         html += '<div class="section-label">' + esc(c) + "</div>";
         html += inCat.map(cardHTML).join("");
       });
+
+      // Then the taken items, pushed to the bottom
+      function byCatPrice(a, b) {
+        var c = catRank(a.category) - catRank(b.category);
+        return c || ((b.price || 0) - (a.price || 0));
+      }
+      if (resv.length) {
+        html += '<div class="section-label section-taken">Reserved &middot; on hold</div>';
+        html += resv.sort(byCatPrice).map(cardHTML).join("");
+      }
+      if (soldI.length) {
+        html += '<div class="section-label section-taken">Sold</div>';
+        html += soldI.sort(byCatPrice).map(cardHTML).join("");
+      }
     } else {
       html = sortItems(items).map(cardHTML).join("");
     }
