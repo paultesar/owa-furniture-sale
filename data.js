@@ -53,7 +53,7 @@ window.SALE = {
       note:"Heavy-duty white sit/stand desk — smooth, quiet motorised height adjust.",
       images:["IMG_3034.jpg","IMG_3042.jpg"] },
 
-    { id:"accent-chairs", title:"Pair of velvet accent chairs", price:50, status:"available", category:"Furniture", featured:true,
+    { id:"accent-chairs", title:"Pair of velvet accent chairs", price:100, status:"available", category:"Furniture", featured:true,
       note:"Set of 2. Dusty-blue velvet with gold frames — barely used.",
       images:["IMG_3030.jpg"] },
 
@@ -61,7 +61,7 @@ window.SALE = {
       note:"Grey high-back, fully adjustable. Very comfortable for long days.",
       images:["IMG_3034.jpg"] },
 
-    { id:"bed", title:"Bed — frame + mattress (full)", price:45, status:"available", category:"Furniture", featured:true,
+    { id:"bed", title:"Bed — frame + mattress (full)", price:90, status:"available", category:"Furniture", featured:true,
       note:"Black metal frame + mattress. Bedding can be included — just ask.",
       images:["pack4.jpg"] },
 
@@ -69,11 +69,11 @@ window.SALE = {
       note:"Folds down to save space. (Table only — chairs sold separately below.)",
       images:["IMG_3027.jpg"] },
 
-    { id:"dining-chairs", title:"2 wooden dining chairs", price:8, status:"available", category:"Furniture",
+    { id:"dining-chairs", title:"2 wooden dining chairs", price:15, status:"available", category:"Furniture",
       note:"Set of 2, solid wood with cushions. (From the dining set.)",
       images:["IMG_3027.jpg"] },
 
-    { id:"dresser", title:"5-drawer fabric dresser", price:20, status:"available", category:"Furniture", featured:true,
+    { id:"dresser", title:"5-drawer fabric dresser", price:40, status:"available", category:"Furniture", featured:true,
       note:"Wood top, soft fabric drawers — great for a bedroom.",
       images:["IMG_3044.jpg"] },
 
@@ -81,31 +81,31 @@ window.SALE = {
       note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
       images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
 
-    { id:"bar-cart", title:"Bar cart with wine rack", price:24, status:"available", category:"Furniture", featured:true,
+    { id:"bar-cart", title:"Bar cart with wine rack", price:48, status:"available", category:"Furniture", featured:true,
       note:"Industrial wood + metal, glass-stem holder & bottle storage.",
       images:["IMG_3032.jpg"] },
 
-    { id:"coffee-table", title:"Black coffee table", price:21, status:"available", category:"Furniture",
+    { id:"coffee-table", title:"Black coffee table", price:42, status:"available", category:"Furniture",
       note:"Two-tier with handy lower shelf.",
       images:["IMG_3029.jpg","IMG_3036.jpg"] },
 
-    { id:"cube-shelf", title:"6-cube storage shelf", price:20, status:"available", category:"Furniture",
+    { id:"cube-shelf", title:"6-cube storage shelf", price:40, status:"sold", category:"Furniture",
       note:"Classic white cube unit — books, bins or display.",
       images:["IMG_3047.jpg"] },
 
-    { id:"entryway-bundle", title:"Shoe rack + bin + clothing rack", price:20, status:"available", category:"Furniture",
+    { id:"entryway-bundle", title:"Shoe rack + bin + clothing rack", price:40, status:"available", category:"Furniture",
       note:"All three together (shown in the same photo): tall 10-tier shoe rack, stainless motion-sensor bin & the black metal clothing rail behind it.",
       images:["IMG_3037.jpg","IMG_3046.jpg"] },
 
-    { id:"garment-rack-wood", title:"Rolling garment rack with shelf", price:15, status:"available", category:"Furniture",
+    { id:"garment-rack-wood", title:"Rolling garment rack with shelf", price:30, status:"available", category:"Furniture",
       note:"Wood + metal clothes rail on wheels, with storage shelf.",
       images:["IMG_3045.jpg"] },
 
-    { id:"clothes-rack-metal", title:"Black metal clothes rack", price:10, status:"available", category:"Furniture",
+    { id:"clothes-rack-metal", title:"Black metal clothes rack", price:10, status:"sold", category:"Furniture",
       note:"Tall freestanding black metal clothes rail.",
       images:["IMG_3046.jpg"] },
 
-    { id:"coat-rack", title:"Wooden coat stand", price:12, status:"available", category:"Furniture",
+    { id:"coat-rack", title:"Wooden coat stand", price:25, status:"sold", category:"Furniture",
       note:"Free-standing branch-style rack for coats & hats.",
       images:["IMG_3039.jpg"] },
 
