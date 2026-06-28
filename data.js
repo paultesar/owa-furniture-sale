@@ -57,7 +57,7 @@ window.SALE = {
       note:"Set of 2. Dusty-blue velvet with gold frames — barely used.",
       images:["IMG_3030.jpg"] },
 
-    { id:"office-chair", title:"Ergonomic office chair", price:90, status:"reserved", category:"Furniture", featured:true,
+    { id:"office-chair", title:"Ergonomic office chair", price:90, status:"available", category:"Furniture", featured:true,
       note:"Grey high-back, fully adjustable. Very comfortable for long days.",
       images:["IMG_3034.jpg"] },
 
