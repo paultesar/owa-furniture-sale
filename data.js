@@ -135,6 +135,10 @@ window.SALE = {
       images:["IMG_3044.jpg"] },
 
     /* ===== APPLIANCES ===== */
+    { id:"kettle-grinder-toaster", title:"Kettle + grinder + toaster", price:40, status:"available", category:"Appliances",
+      note:"All three together: electric gooseneck kettle, Preethi mixer-grinder & 2-slice toaster (shown in the photo).",
+      images:["IMG_3022.jpg"] },
+
     { id:"monitor", title:"Desktop monitor", price:40, status:"sold", category:"Appliances",
       note:"Widescreen monitor (the one on the desk in the photo).",
       images:["IMG_3034.jpg"] },
@@ -151,7 +155,7 @@ window.SALE = {
       note:"Multi-cooker (left in the photo).",
       images:["IMG_3023.jpg"] },
 
-    { id:"grinder", title:"Mixer-grinder (Preethi)", price:25, status:"available", category:"Appliances",
+    { id:"grinder", title:"Mixer-grinder (Preethi)", price:25, status:"hidden", category:"Appliances",
       note:"Stainless wet/dry grinder — great for spices & batters.",
       images:["IMG_3022.jpg"] },
 
@@ -171,7 +175,7 @@ window.SALE = {
       note:"Compact Dreo ceramic heater — the small one on the table, shown beside the tower fan.",
       images:["IMG_3031.jpg"] },
 
-    { id:"kettle", title:"Electric gooseneck kettle", price:12, status:"available", category:"Appliances",
+    { id:"kettle", title:"Electric gooseneck kettle", price:12, status:"hidden", category:"Appliances",
       note:"Black pour-over style kettle.",
       images:["IMG_3022.jpg"] },
 
@@ -179,7 +183,7 @@ window.SALE = {
       note:"Cool-mist humidifier (sitting on top of the shelf in the photo).",
       images:["IMG_3047.jpg"] },
 
-    { id:"toaster", title:"2-slice toaster", price:8, status:"available", category:"Appliances",
+    { id:"toaster", title:"2-slice toaster", price:8, status:"hidden", category:"Appliances",
       note:"Simple and works great.",
       images:["IMG_3022.jpg"] },
 
