@@ -53,11 +53,11 @@ window.SALE = {
       note:"Heavy-duty white sit/stand desk — smooth, quiet motorised height adjust.",
       images:["IMG_3034.jpg","IMG_3042.jpg"] },
 
-    { id:"accent-chairs", title:"Pair of velvet accent chairs", price:100, status:"available", category:"Furniture", featured:true,
+    { id:"accent-chairs", title:"Pair of velvet accent chairs", price:80, status:"available", category:"Furniture", featured:true,
       note:"Set of 2. Dusty-blue velvet with gold frames — barely used.",
       images:["IMG_3030.jpg"] },
 
-    { id:"office-chair", title:"Ergonomic office chair", price:90, status:"available", category:"Furniture", featured:true,
+    { id:"office-chair", title:"Ergonomic office chair", price:60, status:"available", category:"Furniture", featured:true,
       note:"Grey high-back, fully adjustable. Very comfortable for long days.",
       images:["IMG_3034.jpg"] },
 
@@ -81,7 +81,7 @@ window.SALE = {
       note:"Comfy light-grey L-shape, seats 4–5. Throw + cushions included.",
       images:["IMG_3028.jpg","IMG_3029.jpg","IMG_3041.jpg"] },
 
-    { id:"bar-cart", title:"Bar cart with wine rack", price:48, status:"available", category:"Furniture", featured:true,
+    { id:"bar-cart", title:"Bar cart with wine rack", price:45, status:"available", category:"Furniture", featured:true,
       note:"Industrial wood + metal, glass-stem holder & bottle storage.",
       images:["IMG_3032.jpg"] },
 
@@ -126,12 +126,12 @@ window.SALE = {
       note:"Modern pole lamp with linen drum shade.",
       images:["IMG_3043.jpg"] },
 
-    { id:"desk-lamp", title:"Architect desk lamp", price:30, status:"available", category:"Lighting",
+    { id:"desk-lamp", title:"Architect desk lamp", price:25, status:"available", category:"Lighting",
       note:"Adjustable task lamp with wireless-charging base.",
       images:["IMG_3042.jpg"] },
 
-    { id:"table-lamps", title:"Table lamps (several available)", price:16, status:"available", category:"Lighting",
-      note:"$16 each — linen cylinder, amber glass & white styles. Ask which is left.",
+    { id:"table-lamps", title:"Linen cylinder table lamps (2)", price:12, status:"available", category:"Lighting",
+      note:"$12 each — only the 2 linen cylinder lamps are left (amber glass & white ones are gone).",
       images:["IMG_3044.jpg"] },
 
     /* ===== APPLIANCES ===== */
