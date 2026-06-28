@@ -179,7 +179,7 @@ window.SALE = {
       note:"Cool-mist humidifier (sitting on top of the shelf in the photo).",
       images:["IMG_3047.jpg"] },
 
-    { id:"toaster", title:"2-slice toaster", price:8, status:"reserved", category:"Appliances",
+    { id:"toaster", title:"2-slice toaster", price:8, status:"available", category:"Appliances",
       note:"Simple and works great.",
       images:["IMG_3022.jpg"] },
 
