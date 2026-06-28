@@ -49,7 +49,7 @@ window.SALE = {
       images:["pack2.jpg","pack1.jpg","pack3.jpg","pack4.jpg"] },
 
     /* ===== FURNITURE ===== */
-    { id:"standing-desk", title:"Electric standing desk", price:100, status:"reserved", category:"Furniture", featured:true,
+    { id:"standing-desk", title:"Electric standing desk", price:100, status:"sold", category:"Furniture", featured:true,
       note:"Heavy-duty white sit/stand desk — smooth, quiet motorised height adjust.",
       images:["IMG_3034.jpg","IMG_3042.jpg"] },
 
@@ -109,7 +109,7 @@ window.SALE = {
       note:"Free-standing branch-style rack for coats & hats.",
       images:["IMG_3039.jpg"] },
 
-    { id:"air-mattress", title:"Air mattress — queen, built-in pump", price:10, status:"reserved", category:"Furniture",
+    { id:"air-mattress", title:"Air mattress — queen, built-in pump", price:10, status:"sold", category:"Furniture",
       note:"Used once, basically new. Intex Dura-Beam Deluxe queen (22 inches high) with a built-in electric pump — inflates itself in minutes. Great spare bed.",
       images:["airmattress.jpg"] },
 
@@ -122,7 +122,7 @@ window.SALE = {
       note:"Set of 2. Soft, cosy lighting.",
       images:["IMG_3040.jpg"] },
 
-    { id:"white-floor-lamp", title:"White floor lamp", price:32, status:"reserved", category:"Lighting",
+    { id:"white-floor-lamp", title:"White floor lamp", price:32, status:"sold", category:"Lighting",
       note:"Modern pole lamp with linen drum shade.",
       images:["IMG_3043.jpg"] },
 
@@ -135,15 +135,15 @@ window.SALE = {
       images:["IMG_3044.jpg"] },
 
     /* ===== APPLIANCES ===== */
-    { id:"monitor", title:"Desktop monitor", price:40, status:"reserved", category:"Appliances",
+    { id:"monitor", title:"Desktop monitor", price:40, status:"sold", category:"Appliances",
       note:"Widescreen monitor (the one on the desk in the photo).",
       images:["IMG_3034.jpg"] },
 
-    { id:"blender", title:"High-power blender", price:30, status:"reserved", category:"Appliances",
+    { id:"blender", title:"High-power blender", price:30, status:"sold", category:"Appliances",
       note:"Powerful jug blender — smoothies, soups, the works.",
       images:["IMG_3020.jpg"] },
 
-    { id:"microwave", title:"Countertop microwave", price:25, status:"reserved", category:"Appliances",
+    { id:"microwave", title:"Countertop microwave", price:25, status:"sold", category:"Appliances",
       note:"Stainless/black, large capacity (the one on the right in the photo).",
       images:["IMG_3022.jpg"] },
 
@@ -192,11 +192,11 @@ window.SALE = {
       note:"Full set — red, white & coupe stemware.",
       images:["IMG_3017.jpg"] },
 
-    { id:"food-storage", title:"Glass food storage set", price:30, status:"reserved", category:"Kitchen",
+    { id:"food-storage", title:"Glass food storage set", price:30, status:"sold", category:"Kitchen",
       note:"Lots of glass containers with lids — meal-prep ready.",
       images:["IMG_3025.jpg"] },
 
-    { id:"cookware", title:"Pots & pans bundle", price:30, status:"reserved", category:"Kitchen",
+    { id:"cookware", title:"Pots & pans bundle", price:30, status:"sold", category:"Kitchen",
       note:"Stockpot, frying pans, lids, colander, sieves & thermal carafe.",
       images:["IMG_3019.jpg"] },
 
@@ -204,15 +204,15 @@ window.SALE = {
       note:"Everyday drinking glasses — a good batch.",
       images:["IMG_3018.jpg"] },
 
-    { id:"dinner-set-green", title:"Sage-green dinnerware set", price:18, status:"reserved", category:"Kitchen",
+    { id:"dinner-set-green", title:"Sage-green dinnerware set", price:18, status:"sold", category:"Kitchen",
       note:"Plates + bowls, lovely matte finish.",
       images:["IMG_3012.jpg"] },
 
-    { id:"knives", title:"Kitchen knife set", price:15, status:"reserved", category:"Kitchen",
+    { id:"knives", title:"Kitchen knife set", price:15, status:"sold", category:"Kitchen",
       note:"Chef, bread & steak knives.",
       images:["IMG_3026.jpg"] },
 
-    { id:"utensils", title:"Utensils, flatware & oven mitts", price:15, status:"reserved", category:"Kitchen",
+    { id:"utensils", title:"Utensils, flatware & oven mitts", price:15, status:"sold", category:"Kitchen",
       note:"Cooking utensils, full cutlery set, can opener & mitts.",
       images:["IMG_3024.jpg"] },
 
@@ -232,12 +232,12 @@ window.SALE = {
       note:"Sold per piece — 2 small brown $5 each, mint & blue $10 each. (Glass dish with lid is reserved.)",
       images:["IMG_3016.jpg"] },
 
-    { id:"mugs", title:"Set of mugs", price:8, status:"reserved", category:"Kitchen",
+    { id:"mugs", title:"Set of mugs", price:8, status:"sold", category:"Kitchen",
       note:"Set of about 7 white/cream mugs.",
       images:["IMG_3011.jpg"] },
 
     /* ===== PLANTS ===== */
-    { id:"plants", title:"House plants — the whole lot", price:120, status:"reserved", category:"Plants",
+    { id:"plants", title:"House plants — the whole lot", price:120, status:"sold", category:"Plants",
       note:"All the plants together: lots of real & faux, including big statement trees. Price is for the full collection.",
       images:["IMG_3036.jpg"] },
 
